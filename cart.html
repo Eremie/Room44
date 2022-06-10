@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>All Clothes - Room44</title>
+    <link rel="stylesheet" href="css/style.css">
+    <script src="https://unpkg.com/boxicons@2.1.2/dist/boxicons.js"></script>
+  </head>
+  <body>
+
+
+
+    <div class="container">
+      <div class="navbar">
+        <div class="logo">
+          <!-- <img src="images/logo.png" alt=""> -->
+          <h1><a href="index.html">Room44</a></h1>
+        </div>
+
+        <nav>
+          <ul id="MenuItems">
+            <li><a href="clothes.html">Clothes</a></li>
+            <li><a href="accessories.html">Accessories</a></li>
+            <li><a href="shoes.html">Shoes</a></li>
+            <li><a href="bags.html">Bags</a></li>
+            <li><a href="services.html">Services</a></li>
+          </ul>
+        </nav>
+        <img src="merch/shopping-bag.png" width="30px" height="30px">
+        <img src="merch/menu.png" width="30px" class="menu-icon" onclick="menutoggle()">
+      </div>
+    </div>
+
+    <!-- -------cart items--------- -->
+
+
+    <div class="small-container cart-page">
+
+      <table>
+        <tr>
+          <th>Product</th>
+          <th>Quantity</th>
+          <th>Subtotal</th>
+        </tr>
+        <tr>
+          <td>
+            <div class="cart-info">
+              <img src="merch/Hoodlum.jpg">
+              <div>
+                <p>Hoodlum Tee</p>
+                <small>Price: 8000</small>
+                <br>
+                <a href="#">Remove</a>
+              </div>
+            </div>
+          </td>
+          <td><input type="number" value="1"></td>
+          <td>8000.00</td>
+        </tr>
+      </table>
+
+      <div class="total-price">
+
+        <table>
+          <tr>
+            <td>Subtotal</td>
+            <td>8000</td>
+          </tr>
+          <tr>
+            <td>Delivery</td>
+            <td>3000</td>
+          </tr>
+          <tr>
+            <td>Total</td>
+            <td>8000</td>
+          </tr>
+        </table>
+
+      </div>
+
+    </div>
+
+
+
+
+<!-- ---------footer---------- -->
+
+    <div class="footer">
+
+      <div class="container">
+
+        <div class="row">
+
+          <div class="footer-col-2">
+            <img src="images/logowhite.png">
+            <p>Just trying to have fun while making funds.</p>
+          </div>
+          <!-- <div class="footer-col-3">
+            <h3>Useful Links</h3>
+            <ul>
+              <li>Coupons</li>
+              <li>Blog post</li>
+              <li>Return Policy</li>
+              <li>Join Affiliate</li>
+            </ul>
+
+          </div> -->
+          <div class="footer-col-4">
+            <h3>Follow us</h3>
+            <ul>
+              <li>Twitter</li>
+              <li>Instagram</li>
+              <li>Telegram</li>
+              <li>Pinterest</li>
+            </ul>
+
+          </div>
+        </div>
+        <hr>
+        <p class="copyright">Copyright 2022 - Room44</p>
+      </div>
+    </div>
+<!-- js for toggle menu -->
+    <script>
+      var MenuItems = document.getElementById("MenuItems");
+
+      MenuItems.style.maxHeight = "0px";
+
+      function menutoggle(){
+        if(MenuItems.style.maxHeight == "0px")
+          {
+            MenuItems.style.maxHeight = "200px"
+          }
+        else
+          {
+            MenuItems.style.maxHeight = "0px"
+          }
+      }
+    </script>
+
+
+  </body>
+</html>
